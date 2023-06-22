@@ -1,0 +1,30 @@
+.apple-bkg {
+  z-index: 000;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0%;
+  background: cover;
+  display: flex;
+  flex-direction: row;
+}
+.apple-content {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.apple-bkg > img {
+  z-index: 000;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0%;
+  object-fit: cover;
+  filter: blur(0px);
+}
+.ab-spline {
+  z-index: 999;
+}

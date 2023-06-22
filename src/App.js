@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Apple from "./components/Apple";
 import Instagram from "./components/Instagram";
-import Spline from "@splinetool/react-spline";
 
 function App() {
   return (
     <div className="App">
-      <Instagram></Instagram>
+      <Instagram />{" "}
     </div>
   );
 }
