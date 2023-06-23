@@ -5,7 +5,7 @@ import Instagram from "./components/Instagram";
 function App() {
   return (
     <div className="App">
-      <Instagram />{" "}
+      <Apple />
     </div>
   );
 }

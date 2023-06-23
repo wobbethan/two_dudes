@@ -7,14 +7,26 @@ function Apple() {
     <div className="apple-component">
       <div className="apple-bkg">
         <img src={apple} alt="" />
-        <div className="apple-content">
-          <h1>Find us on apple podcasts</h1>
-          <h2>2Dudes and an umbrella is also available on apple podcasts</h2>
-        </div>
-        <Spline
-          className="ab-spline"
-          scene="https://prod.spline.design/mvdokveiGFuSae2N/scene.splinecode"
-        />
+        <a
+          href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
+          target="_blank"
+          className="spline-a-left"
+        >
+          <Spline
+            className="ab-spline-left"
+            scene="https://prod.spline.design/nVBRymFrPz8-8KZp/scene.splinecode"
+          />
+        </a>
+        <a
+          href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
+          target="_blank"
+          className="spline-a-right"
+        >
+          <Spline
+            className="ab-spline-right"
+            scene="https://prod.spline.design/mvdokveiGFuSae2N/scene.splinecode"
+          />
+        </a>
       </div>
     </div>
   );
