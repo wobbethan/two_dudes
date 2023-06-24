@@ -1,35 +1,25 @@
-.apple-bkg {
+.apple-component {
   z-index: 000;
   position: absolute;
   width: 100%;
   height: 100vh;
   top: 0;
   left: 0%;
-  background: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
-.apple-content {
+.ac-models {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0%;
   z-index: 999;
   display: flex;
-  flex-direction: column;
+  flex-flow: row nowrap;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  margin: 10% 15%;
-  gap: 1%;
-  padding: 5%;
-  height: 40%;
-  width: 50%;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.apple-bkg > img {
+.apple-component > img {
   z-index: 000;
   position: absolute;
   width: 100%;
@@ -39,35 +29,44 @@
   object-fit: cover;
   filter: blur(0px);
 }
-.ab-spline-left {
+.ac-model-container {
   z-index: 999;
-  margin-left: 10%;
-}
-.ab-spline-right {
-  z-index: 999;
-  margin-right: 10%;
-}
-.spline-a-left {
-  z-index: 999;
-  margin-right: 5%;
-  cursor: pointer;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
-.spline-a-right {
-  z-index: 999;
-  margin-left: 5%;
+.ac-models > a:nth-child(1) {
+  margin-top: 3.6%;
+}
+
+.ac-models > a {
   cursor: pointer;
-  width: 100%;
-  height: auto;
 }
-.apple-content img:nth-child(1) {
-  max-width: 100%;
-  max-height: 100%;
-  transform: scale(1.5);
-  margin-bottom: 5%;
+.ac-title {
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  right: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 35%; /* Need a specific value to work */
+  padding: 1% 2%;
+  background: rgba(251, 251, 251, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: 0.5s ease;
+  text-decoration: none;
 }
-.apple-content img:nth-child(2) {
-  max-width: 100%;
-  max-height: 100%;
+.ac-title:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.ac-title > h1 {
+  color: #fff;
+  font-family: "Kanit";
+  font-size: 3rem;
+  text-align: center;
 }

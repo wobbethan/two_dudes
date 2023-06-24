@@ -1,0 +1,69 @@
+.tiktok-component {
+  overflow: hidden;
+}
+.tiktok-component > img {
+  z-index: 000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
+  overflow: hidden;
+  gap: 0%;
+}
+.tc-content {
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  align-items: center;
+}
+
+.tc-c-text {
+  z-index: 999;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  color: #000;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.tc-c-text > h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.tc-c-phone {
+  position: absolute;
+  left: 35%;
+  z-index: 700;
+  width: auto;
+  transform: scale(1);
+  overflow: hidden;
+}
+.tc-c-phone-styles {
+  z-index: 600;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  margin-bottom: 3%;
+  align-self: center;
+  justify-self: center;
+}
+.tc-c-p-video {
+  z-index: 999;
+  position: absolute;
+  left: 15.5%;
+  top: 17%;
+  width: 105%;
+  height: 65%;
+  overflow: hidden;
+}
