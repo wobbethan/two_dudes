@@ -1,0 +1,25 @@
+.youtube-component > video {
+  z-index: 000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.yc-content {
+  z-index: 999;
+}
+.yt-logo {
+  position: absolute;
+  z-index: 999;
+  top: 0%;
+  left: 10%;
+  transform: translateY(-200vh);
+  scale: 0.3;
+  transition: 3s ease;
+}
+.active {
+  transform: translateY(100vh);
+}
