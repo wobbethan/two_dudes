@@ -8,11 +8,11 @@ function Tiktok() {
     <div className="tiktok-component">
       <img src={tiktokBkg} alt="background for Tiktok" />
       <div className="tc-content">
-        <a href="">
+        <a href="https://www.tiktok.com/@2dudesandanumbrella" target="_blank">
           <img src={tiktokMockup} alt="mockup for Tiktok" />
         </a>
         <img
-          src="https://i.pinimg.com/originals/0d/64/f8/0d64f828c672c5752d1c4a3ba924be23.png"
+          src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Happy-Birthday-PNG/Confetti_Transparent_PNG_Clip_Art_Image-1193308438.png?m=1523964977"
           alt=""
           className="tc-hearts-hover"
         />
