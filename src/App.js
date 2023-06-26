@@ -6,7 +6,7 @@ import Tiktok from "./components/Tiktok";
 function App() {
   return (
     <div className="App">
-      <Apple />
+      <Tiktok />
     </div>
   );
 }

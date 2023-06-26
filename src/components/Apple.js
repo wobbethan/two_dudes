@@ -33,7 +33,7 @@ function Apple() {
         target="_blank"
         className="ac-title"
       >
-        <h1>Listen Now On Apple Podcasts</h1>
+        <h1>Listen Now On Apple Podcasts!</h1>
       </a>
     </div>
   );

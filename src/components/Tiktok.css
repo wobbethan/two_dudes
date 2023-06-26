@@ -18,28 +18,49 @@
   z-index: 999;
   display: flex;
   flex-flow: row nowrap;
-  overflow: hidden;
   align-items: center;
 }
-
-.tc-c-text {
+.tc-content > a {
   z-index: 999;
-  justify-content: center;
-  align-content: center;
+  position: absolute;
+  width: 0vw;
+  height: auto;
+  top: 5%;
+  left: 25%;
+  transition: 0.3s ease;
+  overflow: visible;
+}
+.tc-hearts-hover {
+  z-index: 500;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
   overflow: hidden;
-  color: #000;
-  width: 50%;
-  background: rgba(255, 255, 255, 0.75);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: 1.5s ease;
+  transform: translateY(-100vh);
 }
-.tc-c-text > h1 {
-  font-size: 2rem;
-  text-align: center;
+
+a:hover ~ .tc-hearts-hover {
+  transform: translateY(0vh);
 }
+a:hover ~ .tc-c-text {
+  transform: translateY(0vh);
+}
+a > img {
+  transform: translateX(0vw);
+  transition: 2s ease;
+}
+a:hover > img {
+  transform: translateX(20vw);
+}
+
+.tc-content > a:hover {
+  top: 4%;
+}
+
 .tc-c-phone {
   position: absolute;
   left: 35%;
@@ -48,22 +69,13 @@
   transform: scale(1);
   overflow: hidden;
 }
-.tc-c-phone-styles {
-  z-index: 600;
-  width: auto;
-  height: 100%;
-  overflow: hidden;
-  top: 0;
-  margin-bottom: 3%;
-  align-self: center;
-  justify-self: center;
-}
-.tc-c-p-video {
+.tc-c-text {
   z-index: 999;
-  position: absolute;
-  left: 15.5%;
-  top: 17%;
-  width: 105%;
-  height: 65%;
-  overflow: hidden;
+  color: white;
+  transform: translateY(100vh);
+  transition: 2.25s ease;
+  margin-left: 2%;
+}
+.tc-c-text > img {
+  border-radius: 15%;
 }

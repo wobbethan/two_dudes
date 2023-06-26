@@ -1,36 +1,26 @@
 import React from "react";
 import "./Tiktok.css";
-import tiktokVid from "../assets/RPReplay_Final1687570500.mp4";
+import tiktokMockup from "../assets/tiktoktestmockup.png";
+import tiktokBkg from "../assets/tiktokbkg.png";
+
 function Tiktok() {
   return (
     <div className="tiktok-component">
-      <img
-        src="https://cdn.vox-cdn.com/thumbor/0poVEM8qaDDHJNSxu6EzGSRXAlM=/0x0:2040x1360/2000x1333/filters:focal(1081x748:1082x749)/cdn.vox-cdn.com/uploads/chorus_asset/file/23951408/STK051_VRG_Illo_N_Barclay_4_tiktok.jpg"
-        alt=""
-      />
+      <img src={tiktokBkg} alt="background for Tiktok" />
       <div className="tc-content">
-        <section className="tc-c-text">
-          <h1>2 Dudes and A Tiktok</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi,
-            soluta saepe blanditiis dolorem unde magni perspiciatis provident
-            iusto libero, fuga vero minus optio, odit possimus esse fugit
-            molestiae accusamus sit.
-          </p>
-        </section>
-        <div className="tc-c-phone-styles">
+        <a href="">
+          <img src={tiktokMockup} alt="mockup for Tiktok" />
+        </a>
+        <img
+          src="https://i.pinimg.com/originals/0d/64/f8/0d64f828c672c5752d1c4a3ba924be23.png"
+          alt=""
+          className="tc-hearts-hover"
+        />
+        <div className="tc-c-text">
           <img
-            src="https://freepngimg.com/save/68671-android-white-iphone-telephone-free-transparent-image-hq/1258x944"
+            src="https://theislandnow.com/wp-content/uploads/2023/06/buy-1000-tiktok-followers-theislandnow.jpg"
             alt=""
-            className="tc-c-phone"
           />
-          <video
-            className="tc-c-p-video"
-            src={tiktokVid}
-            muted
-            autoplay
-            loop
-          ></video>
         </div>
       </div>
     </div>
