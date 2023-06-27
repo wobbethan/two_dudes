@@ -1,4 +1,4 @@
-.youtube-component > video {
+.yt-bkg-vid {
   z-index: 000;
   position: absolute;
   width: 100vw;
@@ -7,6 +7,8 @@
   left: 0%;
   object-fit: cover;
   overflow: hidden;
+  transition: 5s ease;
+  filter: blur(0px);
 }
 .yc-content {
   z-index: 999;
@@ -15,11 +17,20 @@
   position: absolute;
   z-index: 999;
   top: 0%;
-  left: 10%;
+  left: -8%;
   transform: translateY(-200vh);
-  scale: 0.3;
+  scale: 0.6;
   transition: 3s ease;
+  width: auto;
+  height: auto;
 }
-.active {
-  transform: translateY(100vh);
+.yt-logo.active {
+  transform: translateY(40vh);
+}
+
+.yt-bkg-vid.active {
+  filter: blur(8px);
+}
+.yc-content:hover > img {
+  scale: 0.65;
 }

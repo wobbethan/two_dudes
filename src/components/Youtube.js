@@ -1,16 +1,16 @@
 import { React, useEffect } from "react";
 import "./Youtube.css";
 import youtubeBkg from "../assets/youtubebkg.mp4";
-
+import mac from "../assets/iMac2dudes.png";
 function Youtube() {
   useEffect(() => {
-    const logos = document.querySelectorAll(".yt-logo");
+    const logos = document.querySelectorAll(".yt-logo, .yt-bkg-vid");
     setTimeout(() => {
       logos.forEach((logo) => {
         logo.classList.remove("active");
+        logo.classList.add("active");
       });
-      logos[0].classList.add("active");
-    }, 4000);
+    }, 5000);
   });
 
   return (
@@ -20,14 +20,19 @@ function Youtube() {
         autoPlay
         src={youtubeBkg}
         alt="background video for youtube"
+        className="yt-bkg-vid"
       />
-      <div className="yc-content">
+      <a
+        className="yc-content"
+        href="https://www.youtube.com/@2dudesandanumbrella"
+        target="_blank"
+      >
         <img
           src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-1-3.png"
           alt=""
           className="yt-logo"
         />
-      </div>
+      </a>
     </div>
   );
 }
