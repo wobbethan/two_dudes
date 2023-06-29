@@ -9,10 +9,12 @@ function Instagram() {
       <img src={blobs} alt="instagram-blob-background" />
       <div className="ic-content">
         <img className="ic-follow" src={follow} alt="Instagram Graffiti" />
+
         <Spline
           className="is-frame"
           scene="https://prod.spline.design/zfqj1Tdc8gSJEkXi/scene.splinecode"
         />
+        {/**/}
       </div>
     </div>
   );

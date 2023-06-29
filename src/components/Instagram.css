@@ -1,48 +1,43 @@
 .instagram-component {
-  overflow: hidden;
-}
-.insta-spline {
   z-index: 000;
-  position: absolute;
-  top: 0;
-  left: 0%;
-  width: auto;
-  height: auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
   object-fit: cover;
-  overflow: hidden;
-}
-.ic-follow {
-  position: absolute;
-  top: 10%;
-  right: 0%;
-  rotate: 25deg;
-  transform: scale(0.8);
-}
-.is-frame {
-  align-self: center;
-  z-index: 999;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  background-color: transparent;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .instagram-component > img {
   z-index: 000;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  top: 0;
-  left: 0%;
+  top: 0px;
+  left: 0px;
   object-fit: cover;
-  filter: blur(0px);
 }
 .ic-content {
   z-index: 999;
-  overflow: hidden;
-  display: flex;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
 }
-
-.ic-content > img {
-  z-index: 999;
+.ic-follow {
+  position: relative;
+  height: auto;
+  width: auto;
+  top: 10%;
+  left: 40%;
+  z-index: inherit;
+  rotate: 25deg;
+  transform: scale(0.8);
+  overflow: visible;
+}
+.is-frame {
+  align-self: center;
+  position: absolute;
+  z-index: 888;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  object-fit: cover;
 }

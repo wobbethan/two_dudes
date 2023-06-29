@@ -17,7 +17,12 @@
   transition: 3s ease;
   width: auto;
   height: auto;
+  transform: translateY(200vh);
 }
-.spotify-content:hover {
-  scale: 0.85;
+
+.sc-active-sc {
+  transform: translateY(0vh);
+}
+.sc-desktop {
+  overflow: visible;
 }
