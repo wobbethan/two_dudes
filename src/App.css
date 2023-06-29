@@ -1,3 +1,9 @@
 * {
   overflow: hidden;
 }
+.apple {
+  position: relative;
+}
+.instagram {
+  position: relative;
+}

@@ -1,0 +1,23 @@
+.spotify-component {
+  z-index: 000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.spotify-content {
+  position: absolute;
+  z-index: 999;
+  top: 5%;
+  left: 12.5%;
+  scale: 0.8;
+  transition: 3s ease;
+  width: auto;
+  height: auto;
+}
+.spotify-content:hover {
+  scale: 0.85;
+}

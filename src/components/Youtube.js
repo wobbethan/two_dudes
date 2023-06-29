@@ -1,7 +1,6 @@
 import { React, useEffect } from "react";
 import "./Youtube.css";
 import youtubeBkg from "../assets/youtubebkg.mp4";
-import mac from "../assets/iMac2dudes.png";
 function Youtube() {
   useEffect(() => {
     const logos = document.querySelectorAll(".yt-logo, .yt-bkg-vid");

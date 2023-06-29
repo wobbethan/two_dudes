@@ -12,7 +12,7 @@ function Tiktok() {
           <img src={tiktokMockup} alt="mockup for Tiktok" />
         </a>
         <img
-          src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Happy-Birthday-PNG/Confetti_Transparent_PNG_Clip_Art_Image-1193308438.png?m=1523964977"
+          src="https://www.enchanted.media/wp-content/uploads/2021/10/Free-Confetti-Effect-Overlay-Colored-Transparent.png"
           alt=""
           className="tc-hearts-hover"
         />

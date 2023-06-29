@@ -1,14 +1,18 @@
 import React from "react";
 import "./Spotify.css";
+import Spline from "@splinetool/react-spline";
+import mac from "../assets/proDisplay.png";
 function Spotify() {
   return (
     <div className="spotify-component">
-      <iframe
-        width="800"
-        height="450"
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0p0cxKr4fwFiKMnWjZzChy%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DymBCwBDvLP7lC94m-1"
-        allowfullscreen
-      />
+      <Spline scene="https://prod.spline.design/CIkZS7Am9DUxXkyf/scene.splinecode" />
+      <div
+        className="spotify-content"
+        href="https://open.spotify.com/show/6zyRcflHKIfvbhpFTvLdba"
+        target="_blank"
+      >
+        <img src={mac} alt="" />
+      </div>
     </div>
   );
 }
