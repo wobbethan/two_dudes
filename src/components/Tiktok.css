@@ -47,17 +47,17 @@
   transform: translateY(-100vh);
 }
 
-a:hover ~ .tc-hearts-hover {
+.tc-mockup:hover ~ .tc-hearts-hover {
   transform: translateY(0vh);
 }
-a:hover ~ .tc-c-text {
+.tc-mockup:hover ~ .tc-c-text {
   transform: translateY(0vh);
 }
-a > img {
+.tc-mockup > img {
   transform: translateX(0vw);
   transition: 2s ease;
 }
-a:hover > img {
+.tc-mockup:hover > img {
   transform: translateX(20vw);
 }
 

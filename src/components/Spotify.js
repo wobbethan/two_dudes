@@ -10,18 +10,29 @@ function Spotify() {
         content.classList.remove("sc-active-sc");
         content.classList.add("sc-active-sc");
       });
-    }, 5000);
+    }, 2000);
   });
   return (
     <div className="spotify-component">
-      <Spline scene="https://prod.spline.design/CIkZS7Am9DUxXkyf/scene.splinecode" />
+      <Spline
+        className="spotify-background"
+        scene="https://prod.spline.design/WIc0l0zAGQjNac6s/scene.splinecode"
+      />
       <div
         className="spotify-content"
         href="https://open.spotify.com/show/6zyRcflHKIfvbhpFTvLdba"
         target="_blank"
       >
-        <img src={mac} alt="" />
+        <a
+          target="_blank"
+          className="spotify-link"
+          rel="noreferrer"
+          href="https://open.spotify.com/show/6zyRcflHKIfvbhpFTvLdba?si=62b45c14b0f5483e"
+        >
+          <img src={mac} alt="spotify page on a mock computer" />
+        </a>
       </div>
+      <div className="spotify-transition-bkg"></div>
     </div>
   );
 }

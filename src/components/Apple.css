@@ -1,9 +1,12 @@
 .apple-component {
   z-index: 000;
-  width: 100%;
+  position: relative;
+  width: 100vw;
   height: 100vh;
-  top: 0;
+  top: 0%;
   left: 0%;
+  object-fit: cover;
+  overflow: hidden;
 }
 .ac-models {
   position: absolute;

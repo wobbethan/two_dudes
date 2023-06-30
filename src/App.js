@@ -15,8 +15,9 @@ function App() {
   });
   return (
     <div className="App">
-      <Youtube />
-      <Youtube />
+      <Instagram />
+      <Apple />
+      <Spotify />
     </div>
   );
 }

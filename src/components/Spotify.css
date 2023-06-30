@@ -1,5 +1,17 @@
 .spotify-component {
   z-index: 000;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.spotify-background {
+  scale: 2;
+}
+.spotify-transition-bkg {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -7,6 +19,8 @@
   left: 0%;
   object-fit: cover;
   overflow: hidden;
+  transition: 3s ease;
+  background-color: rgba(30, 215, 96, 0);
 }
 .spotify-content {
   position: absolute;
@@ -25,4 +39,13 @@
 }
 .sc-desktop {
   overflow: visible;
+}
+.spotify-link > img {
+  transition: 3s ease;
+}
+.spotify-link:hover > img {
+  scale: 0.9;
+}
+.spotify-content:hover ~ .spotify-transition-bkg {
+  background-color: rgba(30, 215, 96, 1);
 }

@@ -8,18 +8,23 @@ function Tiktok() {
     <div className="tiktok-component">
       <img src={tiktokBkg} alt="background for Tiktok" />
       <div className="tc-content">
-        <a href="https://www.tiktok.com/@2dudesandanumbrella" target="_blank">
+        <a
+          href="https://www.tiktok.com/@2dudesandanumbrella"
+          target="_blank"
+          className="tc-mockup"
+          rel="noreferrer"
+        >
           <img src={tiktokMockup} alt="mockup for Tiktok" />
         </a>
         <img
           src="https://www.enchanted.media/wp-content/uploads/2021/10/Free-Confetti-Effect-Overlay-Colored-Transparent.png"
-          alt=""
+          alt="raining confetti"
           className="tc-hearts-hover"
         />
         <div className="tc-c-text">
           <img
             src="https://theislandnow.com/wp-content/uploads/2023/06/buy-1000-tiktok-followers-theislandnow.jpg"
-            alt=""
+            alt="follow us tiktok message"
           />
         </div>
       </div>
