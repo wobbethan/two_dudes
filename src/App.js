@@ -4,20 +4,24 @@ import Instagram from "./components/Instagram"; //done and fits in app
 import Spotify from "./components/Spotify";
 import Tiktok from "./components/Tiktok"; //finalize
 import Youtube from "./components/Youtube"; //done
-import Contact from "./components/Contact";
-import { useEffect } from "react";
-function printTest() {
-  console.log("poop");
-}
+import Home from "./components/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
-  useEffect(() => {
-    window.addEventListener("scroll", printTest);
-  });
   return (
     <div className="App">
-      <Instagram />
-      <Apple />
-      <Spotify />
+      <ion-icon className="home-icon" name="home-outline"></ion-icon>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/instagram" element={<Instagram />} />
+          <Route path="/applepodcasts" element={<Apple />} />
+          <Route path="/spotify" element={<Spotify />} />
+          <Route path="/tiktok" element={<Tiktok />} />
+          <Route path="/youtube" element={<Youtube />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

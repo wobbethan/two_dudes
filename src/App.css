@@ -2,6 +2,7 @@
   overflow-y: "scroll";
   overflow-x: hidden;
   scroll-behavior: none;
+  user-select: none;
 }
 .App {
   z-index: 000;
@@ -11,6 +12,9 @@
   top: 0px;
   left: 0px;
   object-fit: cover;
+}
+.home-icon {
+  position: fixed;
 }
 /*
 *::-webkit-scrollbar {
