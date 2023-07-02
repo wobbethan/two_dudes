@@ -7,11 +7,11 @@ const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 function Instagram() {
   return (
-    <div className="instagram-component">
+    <body className="instagram-component">
       <img src={blobs} alt="instagram-blob-background" />
       <img src={phone} alt="Instagram Graffiti" />
 
-      <div className="ic-content">
+      <article className="ic-content">
         <img className="ic-follow" src={follow} alt="Instagram Graffiti" />
 
         <Spline
@@ -19,8 +19,8 @@ function Instagram() {
           scene="https://prod.spline.design/oNQIT6v5fvWYxXfh/scene.splinecode"
         />
         {/**/}
-      </div>
-    </div>
+      </article>
+    </body>
   );
 }
 

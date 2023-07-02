@@ -18,7 +18,7 @@ function Spotify() {
         className="spotify-background"
         scene="https://prod.spline.design/WIc0l0zAGQjNac6s/scene.splinecode"
       />
-      <div
+      <article
         className="spotify-content"
         href="https://open.spotify.com/show/6zyRcflHKIfvbhpFTvLdba"
         target="_blank"
@@ -31,7 +31,7 @@ function Spotify() {
         >
           <img src={mac} alt="spotify page on a mock computer" />
         </a>
-      </div>
+      </article>
       <div className="spotify-transition-bkg"></div>
     </div>
   );

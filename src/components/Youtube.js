@@ -13,7 +13,7 @@ function Youtube() {
   }
 
   return (
-    <div className="youtube-component">
+    <body className="youtube-component">
       <video
         muted
         autoPlay
@@ -36,7 +36,7 @@ function Youtube() {
           className="yt-logo"
         />
       </a>
-    </div>
+    </body>
   );
 }
 

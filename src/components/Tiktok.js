@@ -5,9 +5,9 @@ import tiktokBkg from "../assets/tiktokbkg.png";
 
 function Tiktok() {
   return (
-    <div className="tiktok-component">
+    <body className="tiktok-component">
       <img src={tiktokBkg} alt="background for Tiktok" />
-      <div className="tc-content">
+      <article className="tc-content">
         <a
           href="https://www.tiktok.com/@2dudesandanumbrella"
           target="_blank"
@@ -27,8 +27,8 @@ function Tiktok() {
             alt="follow us tiktok message"
           />
         </div>
-      </div>
-    </div>
+      </article>
+    </body>
   );
 }
 

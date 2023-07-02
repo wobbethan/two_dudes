@@ -1,11 +1,3 @@
-.instagram-component {
-  z-index: 000;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  object-fit: cover;
-  overflow-y: hidden;
-}
 .instagram-component > img {
   z-index: 000;
   position: absolute;

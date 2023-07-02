@@ -4,10 +4,18 @@ import tiktokWindow from "../assets/tiktokWindow.png";
 import appleWindow from "../assets/apWindow.png";
 import youtubeWindow from "../assets/youtubeWindow.png";
 import spotifyWindow from "../assets/spotifyWindow.png";
-
+import homebkg from "../assets/luca-bravo-VowIFDxogG4-unsplash.jpg";
 import "./Home.css";
 function Home() {
   useEffect(() => {
+    const contents = document.querySelectorAll(".image-track");
+    setTimeout(() => {
+      contents.forEach((content) => {
+        content.classList.remove("it-active");
+        content.classList.add("it-active");
+      });
+    }, 2000);
+
     const track = document.getElementById("image-track");
 
     const handleOnDown = (e) => (track.dataset.mouseDownAt = e.clientX);
@@ -63,41 +71,76 @@ function Home() {
   });
 
   return (
-    <div className="home-component">
-      <div
+    <body className="home-component">
+      {/*<img
+        className="home-bkg"
+        src={homebkg}
+        alt="home page background"
+        draggable="false"
+      />*/}
+      <nav
         className="image-track"
         id="image-track"
         data-mouse-down-at="0"
         data-prev-percentage="0"
       >
-        <img
-          className="it-image"
-          src={appleWindow}
-          alt="poop"
-          draggable="false"
-        />
-
-        <img
-          className="it-image"
-          src={tiktokWindow}
-          alt="poop"
-          draggable="false"
-        />
-        <img className="it-image" src={igWindow} alt="poop" draggable="false" />
-        <img
-          className="it-image"
-          src={youtubeWindow}
-          alt="poop"
-          draggable="false"
-        />
-        <img
-          className="it-image"
-          src={spotifyWindow}
-          alt="poop"
-          draggable="false"
-        />
-      </div>
-    </div>
+        <section className="it-container">
+          <a href="/applepodcasts" className="it-c-link" draggable="false">
+            Learn More
+          </a>
+          <img
+            className="it-image"
+            src={appleWindow}
+            alt="podcast window"
+            draggable="false"
+          />
+        </section>
+        <section className="it-container">
+          <a href="/tiktok" className="it-c-link" draggable="false">
+            Learn More
+          </a>
+          <img
+            className="it-image"
+            src={tiktokWindow}
+            alt="tiktok window"
+            draggable="false"
+          />
+        </section>
+        <section className="it-container">
+          <a href="/instagram" className="it-c-link" draggable="false">
+            Learn More
+          </a>
+          <img
+            className="it-image"
+            src={igWindow}
+            alt="instagram window"
+            draggable="false"
+          />
+        </section>
+        <section className="it-container">
+          <a href="/youtube" className="it-c-link" draggable="false">
+            Learn More
+          </a>
+          <img
+            className="it-image"
+            src={youtubeWindow}
+            alt="youtube window"
+            draggable="false"
+          />
+        </section>
+        <section className="it-container">
+          <a href="/spotify" className="it-c-link" draggable="false">
+            Learn More
+          </a>
+          <img
+            className="it-image"
+            src={spotifyWindow}
+            alt="spotify window"
+            draggable="false"
+          />
+        </section>
+      </nav>
+    </body>
   );
 }
 

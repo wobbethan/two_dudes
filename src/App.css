@@ -3,6 +3,7 @@
   overflow-x: hidden;
   scroll-behavior: none;
   user-select: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .App {
   z-index: 000;
@@ -16,8 +17,7 @@
 .home-icon {
   position: fixed;
 }
-/*
+
 *::-webkit-scrollbar {
   display: none;
 }
-*/
