@@ -20,7 +20,10 @@ function Apple() {
           />
         </a>
         <section className="ac-model-container div-container">
-          <Spline scene="https://prod.spline.design/vKVNonf2fsf-Fiu9/scene.splinecode" />
+          <Spline
+            className="ap-watch"
+            scene="https://prod.spline.design/vKVNonf2fsf-Fiu9/scene.splinecode"
+          />
         </section>
         <a
           className="ac-model-container"

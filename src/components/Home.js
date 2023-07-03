@@ -72,12 +72,13 @@ function Home() {
 
   return (
     <body className="home-component">
-      {/*<img
+      <img
         className="home-bkg"
-        src={homebkg}
+        src="https://icons.veryicon.com/png/o/miscellaneous/streamline/umbrella-27.png"
         alt="home page background"
         draggable="false"
-      />*/}
+      />
+
       <nav
         className="image-track"
         id="image-track"

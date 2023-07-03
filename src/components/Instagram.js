@@ -18,7 +18,6 @@ function Instagram() {
           className="is-frame"
           scene="https://prod.spline.design/oNQIT6v5fvWYxXfh/scene.splinecode"
         />
-        {/**/}
       </article>
     </body>
   );

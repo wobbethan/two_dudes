@@ -17,15 +17,22 @@
   align-items: center;
 }
 .tc-content > a {
-  z-index: 999;
+  z-index: 888;
   position: absolute;
   width: 0vw;
   height: auto;
-  bottom: -12%;
-  left: 25%;
+  bottom: 0%;
+  left: 50%;
   transition: 0.3s ease;
   overflow: visible;
 }
+.tc-content > a > img {
+  position: relative;
+  transform: translate(-50%, 10%);
+  transition: 3s ease;
+  scale: 1;
+}
+
 .tc-hearts-hover {
   z-index: 500;
   position: absolute;
@@ -45,28 +52,13 @@
 .tc-mockup:hover ~ .tc-c-text {
   transform: translateY(0vh);
 }
-.tc-mockup > img {
-  transform: translateX(0vw);
-  transition: 2s ease;
-}
-.tc-mockup:hover > img {
-  transform: translateX(20vw);
-}
 
-.tc-c-phone {
-  position: absolute;
-  left: 35%;
-  z-index: 700;
-  width: auto;
-  transform: scale(1);
-  overflow: hidden;
-}
 .tc-c-text {
   z-index: 999;
   color: white;
   transform: translateY(100vh);
   transition: 2.25s ease;
-  margin-left: 10%;
+  justify-self: center;
 }
 .tc-c-text > img {
   border-radius: 15%;

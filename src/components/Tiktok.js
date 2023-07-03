@@ -21,6 +21,7 @@ function Tiktok() {
           alt="raining confetti"
           className="tc-hearts-hover"
         />
+
         <div className="tc-c-text">
           <img
             src="https://theislandnow.com/wp-content/uploads/2023/06/buy-1000-tiktok-followers-theislandnow.jpg"

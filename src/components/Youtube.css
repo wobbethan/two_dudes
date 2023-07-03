@@ -23,15 +23,16 @@
   z-index: 999;
   position: absolute;
   top: 0%;
-  left: -8%;
-  transform: translateY(-200vh);
+  left: 0%;
   scale: 0.6;
   transition: 3s ease;
-  width: auto;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  transform: translateY(-200vh);
 }
 .yt-logo.active {
-  transform: translateY(40vh);
+  transform: translateY(0vh);
 }
 
 .yt-bkg-vid.active {

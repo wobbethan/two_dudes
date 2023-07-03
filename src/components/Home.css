@@ -1,7 +1,18 @@
 .home-component {
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background: #ffafbd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc3a0,
+    #ffafbd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc3a0,
+    #ffafbd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   margin: 0rem;
   overflow: hidden;
 }
@@ -12,8 +23,9 @@
   height: 100vh;
   top: 0px;
   left: 0px;
-  object-fit: cover;
-  filter: blur(5px);
+  scale: 0.4;
+  object-fit: contain;
+  rotate: -35deg;
 }
 .image-track {
   display: flex;
@@ -21,7 +33,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, 100%);
+  transform: translate(-50%, 200%);
   box-sizing: content-box;
   z-index: 888;
   transition: 3s ease;
@@ -33,8 +45,6 @@
   width: 50vmin;
   height: 56vmin;
   overflow: hidden;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
 }
 .it-container > .it-image {
   width: 50vmin;
@@ -63,4 +73,45 @@
 }
 .it-container:hover > .it-c-link {
   color: rgba(255, 255, 255, 1);
+}
+footer {
+  z-index: 500;
+}
+footer > ul {
+  color: black;
+  position: relative;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 999;
+  display: inline-block;
+  text-decoration: none;
+}
+ul > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.hc-footer-list li a {
+  color: black;
+  display: inline-block;
+
+  list-style: none;
+  text-decoration: none;
+}
+@media screen and (max-width: 420px) {
+  .it-container {
+    width: 60vmin;
+    height: 110vmin;
+    overflow: hidden;
+  }
+  .it-container > .it-image {
+    width: 60vmin;
+    height: 110vmin;
+    object-fit: cover;
+    object-position: 50% center;
+    transition: 3.5s ease;
+    margin-top: 0;
+    transform: translate(0, -11%);
+  }
 }

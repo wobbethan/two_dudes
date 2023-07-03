@@ -3,8 +3,8 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
-  top: 0px;
-  left: 0px;
+  top: 0%;
+  left: 0%;
   object-fit: cover;
 }
 .ic-content {
@@ -15,14 +15,12 @@
 }
 .ic-follow {
   position: relative;
-  height: auto;
-  width: auto;
-  top: 10%;
-  left: 40%;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-61%);
   z-index: inherit;
-  rotate: 25deg;
-  transform: scale(0.8);
   overflow: visible;
+  scale: 0.8;
 }
 .is-frame {
   align-self: center;
@@ -33,4 +31,73 @@
   bottom: 0%;
   object-fit: cover;
   cursor: pointer;
+  width: 100vw;
+  height: auto;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  .ic-content {
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: visible;
+  }
+  .ic-content > .is-frame {
+    align-self: center;
+    position: absolute;
+    z-index: 888;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    cursor: pointer;
+    overflow: visible;
+    scale: 0.5;
+  }
+  .instagram-component > img:nth-child(2) {
+    z-index: 000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    scale: 0.7;
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .ic-content {
+    z-index: 999;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow: visible;
+  }
+  .is-frame {
+    align-self: center;
+    position: absolute;
+    z-index: 888;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    cursor: pointer;
+    scale: 0.6;
+    overflow: visible;
+  }
+  .instagram-component > img:nth-child(2) {
+    z-index: 000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    scale: 0.7;
+    overflow: visible;
+  }
+  .ic-follow {
+    display: none;
+  }
 }

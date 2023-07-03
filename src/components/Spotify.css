@@ -23,15 +23,16 @@
   background-color: rgba(30, 215, 96, 0);
 }
 .spotify-content {
-  position: absolute;
   z-index: 999;
-  top: 5%;
-  left: 12.5%;
-  scale: 0.8;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
   transition: 3s ease;
-  width: auto;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
   transform: translateY(200vh);
+  overflow: visible;
 }
 
 .sc-active-sc {
@@ -41,11 +42,27 @@
   overflow: visible;
 }
 .spotify-link > img {
+  scale: 1;
+  position: absolute;
+  left: 0%;
+  bottom: -20%;
   transition: 3s ease;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
 }
-.spotify-link:hover > img {
+.spotify-link > img:hover {
   scale: 0.9;
 }
-.spotify-content:hover ~ .spotify-transition-bkg {
-  background-color: rgba(30, 215, 96, 1);
+@media screen and (max-width: 1024px) {
+  .spotify-link > img {
+    scale: 0.9;
+    position: absolute;
+    left: 0%;
+    bottom: -5%;
+    transition: 3s ease;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+  }
 }
