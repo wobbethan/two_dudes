@@ -19,7 +19,7 @@
 .tc-content > a {
   z-index: 888;
   position: absolute;
-  width: 0vw;
+  width: 20vw;
   height: auto;
   bottom: 0%;
   left: 50%;
@@ -30,7 +30,8 @@
   position: relative;
   transform: translate(-50%, 10%);
   transition: 3s ease;
-  scale: 1;
+  height: auto;
+  width: 50vw;
 }
 
 .tc-hearts-hover {
@@ -49,17 +50,46 @@
 .tc-mockup:hover ~ .tc-hearts-hover {
   transform: translateY(0vh);
 }
-.tc-mockup:hover ~ .tc-c-text {
-  transform: translateY(0vh);
-}
 
-.tc-c-text {
-  z-index: 999;
-  color: white;
-  transform: translateY(100vh);
-  transition: 2.25s ease;
-  justify-self: center;
+@media screen and (max-width: 800px) {
+  .tc-content > a > img {
+    position: relative;
+    transform: translate(-50%, 10%);
+    transition: 3s ease;
+    height: auto;
+    width: 100vw;
+  }
 }
-.tc-c-text > img {
-  border-radius: 15%;
+@media screen and (max-width: 420px) {
+  .tc-content > a > img {
+    position: relative;
+    transform: translate(-50%, 5%);
+    transition: 3s ease;
+    height: auto;
+    width: 101vw;
+  }
+}
+@media (orientation: landscape) {
+  .tc-content > a > img {
+    position: relative;
+    transform: translate(-50%, 5%);
+    transition: 3s ease;
+    height: 100vh;
+    width: auto;
+  }
+  .tc-c-text {
+    display: none;
+  }
+}
+@media (orientation: portrait) and (min-width: 800px) {
+  .tc-content > a > img {
+    position: relative;
+    transform: translate(-50%, 5%);
+    transition: 3s ease;
+    height: 70vh;
+    width: auto;
+  }
+  .tc-c-text {
+    display: none;
+  }
 }

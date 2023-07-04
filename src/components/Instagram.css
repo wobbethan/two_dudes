@@ -1,3 +1,11 @@
+.instagram-component {
+  z-index: 000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+}
 .instagram-component > img {
   z-index: 000;
   position: absolute;
@@ -31,9 +39,8 @@
   bottom: 0%;
   object-fit: cover;
   cursor: pointer;
-  width: 100vw;
+  width: 100%;
   height: auto;
-  margin: 0;
 }
 @media screen and (max-width: 1024px) {
   .ic-content {
@@ -51,8 +58,14 @@
     left: 0%;
     bottom: 0%;
     cursor: pointer;
+    scale: 1;
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
     overflow: visible;
-    scale: 0.5;
+
+    border: 2px solid black;
   }
   .instagram-component > img:nth-child(2) {
     z-index: 000;
@@ -99,5 +112,15 @@
   }
   .ic-follow {
     display: none;
+  }
+}
+@media (orientation: landscape) and (max-height: 420px) {
+  .ic-follow {
+    position: relative;
+    top: 0%;
+    align-self: center;
+    z-index: inherit;
+    overflow: visible;
+    scale: 0.5;
   }
 }

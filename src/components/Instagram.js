@@ -7,19 +7,18 @@ const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 function Instagram() {
   return (
-    <body className="instagram-component">
+    <div className="instagram-component">
       <img src={blobs} alt="instagram-blob-background" />
       <img src={phone} alt="Instagram Graffiti" />
 
-      <article className="ic-content">
+      <div className="ic-content">
         <img className="ic-follow" src={follow} alt="Instagram Graffiti" />
-
         <Spline
           className="is-frame"
           scene="https://prod.spline.design/oNQIT6v5fvWYxXfh/scene.splinecode"
         />
-      </article>
-    </body>
+      </div>
+    </div>
   );
 }
 
