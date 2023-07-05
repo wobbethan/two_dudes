@@ -6,6 +6,7 @@ import youtubeWindow from "../assets/youtubeWindow.png";
 import spotifyWindow from "../assets/spotifyWindow.png";
 import homebkg from "../assets/luca-bravo-VowIFDxogG4-unsplash.jpg";
 import "./Home.css";
+import { Helmet } from "react-helmet-async";
 function Home() {
   useEffect(() => {
     const contents = document.querySelectorAll(".image-track");
@@ -71,77 +72,88 @@ function Home() {
   });
 
   return (
-    <body className="home-component">
-      <img
-        className="home-bkg"
-        src="https://icons.veryicon.com/png/o/miscellaneous/streamline/umbrella-27.png"
-        alt="home page background"
-        draggable="false"
-      />
+    <>
+      <Helmet>
+        <title>2 Dudes and an Umbrella Podcast | Home</title>
+        <meta
+          name="description"
+          content="Welcome to our Social Hub! Discover the pulse of our brand across various social media platforms all in one place."
+        />
+        <link rel="canonical" href="/"></link>
+      </Helmet>
 
-      <nav
-        className="image-track"
-        id="image-track"
-        data-mouse-down-at="0"
-        data-prev-percentage="0"
-      >
-        <section className="it-container">
-          <a href="/applepodcasts" className="it-c-link" draggable="false">
-            Learn More
-          </a>
-          <img
-            className="it-image"
-            src={appleWindow}
-            alt="podcast window"
-            draggable="false"
-          />
-        </section>
-        <section className="it-container">
-          <a href="/tiktok" className="it-c-link" draggable="false">
-            Learn More
-          </a>
-          <img
-            className="it-image"
-            src={tiktokWindow}
-            alt="tiktok window"
-            draggable="false"
-          />
-        </section>
-        <section className="it-container">
-          <a href="/instagram" className="it-c-link" draggable="false">
-            Learn More
-          </a>
-          <img
-            className="it-image"
-            src={igWindow}
-            alt="instagram window"
-            draggable="false"
-          />
-        </section>
-        <section className="it-container">
-          <a href="/youtube" className="it-c-link" draggable="false">
-            Learn More
-          </a>
-          <img
-            className="it-image"
-            src={youtubeWindow}
-            alt="youtube window"
-            draggable="false"
-          />
-        </section>
-        <section className="it-container">
-          <a href="/spotify" className="it-c-link" draggable="false">
-            Learn More
-          </a>
-          <img
-            className="it-image"
-            src={spotifyWindow}
-            alt="spotify window"
-            draggable="false"
-          />
-        </section>
-      </nav>
-    </body>
+      <body className="home-component">
+        <img
+          className="home-bkg"
+          src="https://icons.veryicon.com/png/o/miscellaneous/streamline/umbrella-27.png"
+          alt="home page background"
+          draggable="false"
+        />
+
+        <nav
+          className="image-track"
+          id="image-track"
+          data-mouse-down-at="0"
+          data-prev-percentage="0"
+        >
+          <section className="it-container">
+            <a href="/applepodcasts" className="it-c-link" draggable="false">
+              Learn More
+            </a>
+            <img
+              className="it-image"
+              src={appleWindow}
+              alt="podcast window"
+              draggable="false"
+            />
+          </section>
+          <section className="it-container">
+            <a href="/tiktok" className="it-c-link" draggable="false">
+              Learn More
+            </a>
+            <img
+              className="it-image"
+              src={tiktokWindow}
+              alt="tiktok window"
+              draggable="false"
+            />
+          </section>
+          <section className="it-container">
+            <a href="/instagram" className="it-c-link" draggable="false">
+              Learn More
+            </a>
+            <img
+              className="it-image"
+              src={igWindow}
+              alt="instagram window"
+              draggable="false"
+            />
+          </section>
+          <section className="it-container">
+            <a href="/youtube" className="it-c-link" draggable="false">
+              Learn More
+            </a>
+            <img
+              className="it-image"
+              src={youtubeWindow}
+              alt="youtube window"
+              draggable="false"
+            />
+          </section>
+          <section className="it-container">
+            <a href="/spotify" className="it-c-link" draggable="false">
+              Learn More
+            </a>
+            <img
+              className="it-image"
+              src={spotifyWindow}
+              alt="spotify window"
+              draggable="false"
+            />
+          </section>
+        </nav>
+      </body>
+    </>
   );
 }
 

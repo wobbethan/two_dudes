@@ -1,53 +1,64 @@
 import React from "react";
 import "./Apple.css";
 import apple from "../assets/applebkg.jpg";
+import { Helmet } from "react-helmet-async";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 function Apple() {
   return (
-    <div className="apple-component">
-      <img src={apple} alt="apple os background" />
+    <>
+      <Helmet>
+        <title>2 Dudes and an Umbrella Podcast | Apple Podcasts</title>
+        <meta
+          name="description"
+          content="Our podcast is also available to listen to on Apple Podcasts"
+        />
+        <link rel="canonical" href="/applepodcasts"></link>
+      </Helmet>
+      <div className="apple-component">
+        <img src={apple} alt="apple os background" />
 
-      <article className="ac-models">
+        <article className="ac-models">
+          <a
+            className="ac-model-container"
+            href="https://podcasts.apple.com/us/podcast/000-the-launch-of-our-podcast/id1686538001?i=1000611998431"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Spline
+              className="needs-adjust phone_model"
+              scene="https://prod.spline.design/nVBRymFrPz8-8KZp/scene.splinecode"
+            />
+          </a>
+
+          <section className="ac-model-container div-container">
+            <Spline
+              className="ap-watch"
+              scene="https://prod.spline.design/vKVNonf2fsf-Fiu9/scene.splinecode"
+            />
+          </section>
+          <a
+            className="ac-model-container"
+            href="https://podcasts.apple.com/us/podcast/001-fast-food-friends-and-faith/id1686538001?i=1000613111590"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Spline
+              scene="https://prod.spline.design/mvdokveiGFuSae2N/scene.splinecode"
+              className="phone_model"
+            />
+          </a>
+        </article>
         <a
-          className="ac-model-container"
-          href="https://podcasts.apple.com/us/podcast/000-the-launch-of-our-podcast/id1686538001?i=1000611998431"
+          href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
           target="_blank"
+          className="ac-title"
           rel="noreferrer"
         >
-          <Spline
-            className="needs-adjust phone_model"
-            scene="https://prod.spline.design/nVBRymFrPz8-8KZp/scene.splinecode"
-          />
+          <h1>Listen Now!</h1>
         </a>
-
-        <section className="ac-model-container div-container">
-          <Spline
-            className="ap-watch"
-            scene="https://prod.spline.design/vKVNonf2fsf-Fiu9/scene.splinecode"
-          />
-        </section>
-        <a
-          className="ac-model-container"
-          href="https://podcasts.apple.com/us/podcast/001-fast-food-friends-and-faith/id1686538001?i=1000613111590"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Spline
-            scene="https://prod.spline.design/mvdokveiGFuSae2N/scene.splinecode"
-            className="phone_model"
-          />
-        </a>
-      </article>
-      <a
-        href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
-        target="_blank"
-        className="ac-title"
-        rel="noreferrer"
-      >
-        <h1>Listen Now!</h1>
-      </a>
-    </div>
+      </div>
+    </>
   );
 }
 

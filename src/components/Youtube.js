@@ -1,6 +1,8 @@
 import { React } from "react";
 import "./Youtube.css";
 import youtubeBkg from "../assets/youtubebkg.mp4";
+import { Helmet } from "react-helmet-async";
+
 function Youtube() {
   function animation() {
     const logos = document.querySelectorAll(".yt-logo, .yt-bkg-vid");
@@ -13,30 +15,41 @@ function Youtube() {
   }
 
   return (
-    <body className="youtube-component">
-      <video
-        muted
-        autoPlay
-        src={youtubeBkg}
-        type="video/mp4"
-        alt="background video for youtube"
-        className="yt-bkg-vid"
-        onPlaying={animation}
-      />
-      {/* */}
-      <a
-        className="yc-content"
-        href="https://www.youtube.com/@2dudesandanumbrella"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-1-3.png"
-          alt="youtube logo"
-          className="yt-logo"
+    <>
+      <Helmet>
+        <title>2 Dudes and an Umbrella Podcast | Youtube</title>
+        <meta
+          name="description"
+          content="Listen and watch our full length podcasts on youtube.com"
         />
-      </a>
-    </body>
+        <link rel="canonical" href="/youtube"></link>
+      </Helmet>
+
+      <body className="youtube-component">
+        <video
+          muted
+          autoPlay
+          src={youtubeBkg}
+          type="video/mp4"
+          alt="background video for youtube"
+          className="yt-bkg-vid"
+          onPlaying={animation}
+        />
+        {/* */}
+        <a
+          className="yc-content"
+          href="https://www.youtube.com/@2dudesandanumbrella"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-1-3.png"
+            alt="youtube logo"
+            className="yt-logo"
+          />
+        </a>
+      </body>
+    </>
   );
 }
 
