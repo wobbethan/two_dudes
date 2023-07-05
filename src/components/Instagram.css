@@ -58,14 +58,10 @@
     left: 0%;
     bottom: 0%;
     cursor: pointer;
-    scale: 1;
     width: 100vw;
     height: 100vh;
-
     object-fit: cover;
     overflow: visible;
-
-    border: 2px solid black;
   }
   .instagram-component > img:nth-child(2) {
     z-index: 000;
@@ -96,7 +92,6 @@
     left: 0%;
     bottom: 0%;
     cursor: pointer;
-    scale: 0.6;
     overflow: visible;
   }
   .instagram-component > img:nth-child(2) {

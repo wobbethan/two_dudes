@@ -7,6 +7,7 @@ function Apple() {
   return (
     <div className="apple-component">
       <img src={apple} alt="apple os background" />
+
       <article className="ac-models">
         <a
           className="ac-model-container"
@@ -15,10 +16,11 @@ function Apple() {
           rel="noreferrer"
         >
           <Spline
-            className="needs-adjust"
+            className="needs-adjust phone_model"
             scene="https://prod.spline.design/nVBRymFrPz8-8KZp/scene.splinecode"
           />
         </a>
+
         <section className="ac-model-container div-container">
           <Spline
             className="ap-watch"
@@ -31,7 +33,10 @@ function Apple() {
           target="_blank"
           rel="noreferrer"
         >
-          <Spline scene="https://prod.spline.design/mvdokveiGFuSae2N/scene.splinecode" />
+          <Spline
+            scene="https://prod.spline.design/mvdokveiGFuSae2N/scene.splinecode"
+            className="phone_model"
+          />
         </a>
       </article>
       <a
@@ -40,7 +45,7 @@ function Apple() {
         className="ac-title"
         rel="noreferrer"
       >
-        <h1>Listen Now On Apple Podcasts!</h1>
+        <h1>Listen Now!</h1>
       </a>
     </div>
   );
