@@ -1,10 +1,27 @@
 import React from "react";
 import "./Apple.css";
 import apple from "../assets/applebkg.jpg";
+import staticPhone from "../assets/staticphone.png";
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 function Apple() {
+  useEffect(() => {
+    const contents = document.querySelectorAll(".static-phone");
+    const logos = document.querySelectorAll(".ap-logo-container");
+
+    setTimeout(() => {
+      contents.forEach((content) => {
+        content.classList.remove("sp-active");
+        content.classList.add("sp-active");
+      });
+      logos.forEach((logo) => {
+        logo.classList.remove("sl-active");
+        logo.classList.add("sl-active");
+      });
+    }, 2000);
+  });
   return (
     <>
       <Helmet>
@@ -15,48 +32,45 @@ function Apple() {
         />
         <link rel="canonical" href="/applepodcasts"></link>
       </Helmet>
+
       <div className="apple-component">
         <img src={apple} alt="apple os background" />
-
-        <article className="ac-models">
-          <a
-            className="ac-model-container"
-            href="https://podcasts.apple.com/us/podcast/000-the-launch-of-our-podcast/id1686538001?i=1000611998431"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Spline
-              className="needs-adjust phone_model"
-              scene="https://prod.spline.design/nVBRymFrPz8-8KZp/scene.splinecode"
-            />
-          </a>
-
-          <section className="ac-model-container div-container">
-            <Spline
-              className="ap-watch"
-              scene="https://prod.spline.design/vKVNonf2fsf-Fiu9/scene.splinecode"
-            />
-          </section>
-          <a
-            className="ac-model-container"
-            href="https://podcasts.apple.com/us/podcast/001-fast-food-friends-and-faith/id1686538001?i=1000613111590"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Spline
-              scene="https://prod.spline.design/mvdokveiGFuSae2N/scene.splinecode"
-              className="phone_model"
-            />
-          </a>
-        </article>
+        <a href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001">
+          <img src={staticPhone} alt="static IPhone" className="static-phone" />
+        </a>
+        <a
+          href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
+          className="ap-logo-container"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Podcasts_%28iOS%29.svg/1200px-Podcasts_%28iOS%29.svg.png"
+            alt="static IPhone"
+            className="static-logo"
+          />
+        </a>
         <a
           href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
           target="_blank"
           className="ac-title"
           rel="noreferrer"
         >
-          <h1>Listen Now!</h1>
+          <h1>Available on Apple Podcasts</h1>
         </a>
+        <article className="model_container">
+          <Spline
+            className="phone_model"
+            scene="https://prod.spline.design/nVBRymFrPz8-8KZp/scene.splinecode"
+          />
+          <Spline
+            className="ap-watch"
+            scene="https://prod.spline.design/vKVNonf2fsf-Fiu9/scene.splinecode"
+          />
+
+          <Spline
+            scene="https://prod.spline.design/mvdokveiGFuSae2N/scene.splinecode"
+            className="phone_model"
+          />
+        </article>
       </div>
     </>
   );

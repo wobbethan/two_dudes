@@ -8,20 +8,12 @@
   object-fit: cover;
   overflow: hidden;
 }
-.ac-models {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0%;
-  z-index: 999;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-shrink: 2;
+.static-phone {
+  display: none;
 }
-
+.static-phone > img {
+  display: none;
+}
 .apple-component > img {
   z-index: 000;
   position: absolute;
@@ -32,42 +24,38 @@
   object-fit: cover;
   filter: blur(0px);
 }
-.ac-model-container {
-  z-index: 999;
+
+.model_container {
+  position: absolute;
+  z-index: 888;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.phone_model {
   width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  scale: 0.8;
+}
+.ap-watch {
+  display: none;
 }
 .phone_model {
   width: 100%;
   height: 100%;
-  scale: clamp(1, 0.75, 0.5);
   margin-left: auto;
   margin-right: auto;
 }
-.ac-models > a:nth-child(1) {
-  margin-top: 3.6%;
+.static-logo {
+  display: none;
 }
-
 .ac-title {
-  z-index: 999;
-  position: absolute;
-  left: 0;
-  right: 0%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2.5%;
-  width: 25%; /* Need a specific value to work */
-  background: rgba(251, 251, 251, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  transition: 0.5s ease;
-  text-decoration: none;
-  cursor: pointer;
+  display: none;
 }
 .ac-title:hover {
   transform: scale(1.05);
@@ -81,44 +69,181 @@
   font-size: 3rem;
   text-align: center;
 }
+.ap-watch {
+  cursor: grab;
+}
 
 @media screen and (max-width: 430px) {
-  .apple-component {
-    z-index: 000;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    top: 0%;
-    left: 0%;
-    object-fit: cover;
-    overflow-y: scroll;
-  }
-  .ac-models {
-    position: absolute;
+  .ap-logo-container {
     width: 100%;
     height: 100%;
-    top: 0;
+    top: 0%;
     left: 0%;
-    z-index: 999;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 25;
   }
-  .ac-models > a:nth-child(1) {
+  .model_container {
     display: none;
   }
-  .div-container {
+  .static-phone {
+    z-index: 888;
+    display: block;
+  }
+
+  .static-phone {
+    display: block;
+    z-index: 888;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: -5%;
+    left: 0%;
+    object-fit: cover;
+    filter: blur(0px);
+    transition: 2s ease-in;
+    scale: 0.0001;
+  }
+  .static-logo {
+    display: block;
+    z-index: 888;
+    position: absolute;
+    object-fit: cover;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    transition: 2s ease-in-out;
+    scale: 0.4;
+  }
+  .sp-active {
+    scale: 0.8;
+  }
+
+  .sl-active > img {
+    transform: translateY(190%);
+    scale: 0.2;
+  }
+
+  .ac-title {
+    display: none;
+  }
+}
+@media screen and (orientation: landscape) and (max-height: 430px) {
+  .ap-logo-container {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+  }
+  .model_container {
+    display: none;
+  }
+  .static-phone {
+    z-index: 888;
+    display: block;
+  }
+
+  .static-phone {
+    display: block;
+    z-index: 888;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 5%;
+    left: 0%;
+    object-fit: cover;
+    filter: blur(0px);
+    transition: 2s ease-in;
+    scale: 0.0001;
+  }
+  .sp-active {
     scale: 1;
-    overflow: visible;
-    transform-origin: top center;
   }
-  .div-container > .ap-watch {
-    scale: 0.5;
-    overflow: visible;
-  }
-  .ac-models > a:nth-child(3) {
+
+  .ac-title {
     display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .model_container {
+    display: block;
+    z-index: 999;
+  }
+  .ap-watch {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    scale: 1;
+    cursor: grab;
+  }
+  .phone_model {
+    display: none;
+  }
+  .ac-title {
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    right: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    width: 80%; /* Need a specific value to work */
+    background: rgba(251, 251, 251, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 25px;
+    transition: 0.5s ease;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .ac-title:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .model_container {
+    display: block;
+    z-index: 999;
+  }
+  .ap-watch {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    scale: 1;
+    cursor: grab;
+  }
+  .phone_model {
+    display: none;
+  }
+  .ac-title {
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    right: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 80%; /* Need a specific value to work */
+    background: rgba(251, 251, 251, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 25px;
+    transition: 0.5s ease;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .ac-title:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
   }
 }
