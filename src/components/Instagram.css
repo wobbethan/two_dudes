@@ -14,6 +14,7 @@
   top: 0%;
   left: 0%;
   object-fit: cover;
+  overflow: visible;
 }
 .ic-content {
   z-index: 999;
@@ -42,40 +43,6 @@
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 1024px) {
-  .ic-content {
-    z-index: 999;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    overflow: visible;
-  }
-  .ic-content > .is-frame {
-    align-self: center;
-    position: absolute;
-    z-index: 888;
-    top: 0%;
-    left: 0%;
-    bottom: 0%;
-    cursor: pointer;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    overflow: visible;
-  }
-  .instagram-component > img:nth-child(2) {
-    z-index: 000;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0%;
-    left: 0%;
-    object-fit: cover;
-    scale: 0.7;
-    overflow: visible;
-  }
-}
-
 @media screen and (max-width: 430px) {
   .ic-content {
     z-index: 999;
@@ -117,5 +84,38 @@
     z-index: inherit;
     overflow: visible;
     scale: 0.5;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ic-content {
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: visible;
+  }
+  .ic-content > .is-frame {
+    align-self: center;
+    position: absolute;
+    z-index: 888;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    cursor: pointer;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: visible;
+  }
+  .instagram-component > img:nth-child(2) {
+    z-index: 000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    scale: 0.7;
+    overflow: visible;
   }
 }

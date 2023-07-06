@@ -34,6 +34,7 @@ function Youtube() {
           alt="background video for youtube"
           className="yt-bkg-vid"
           onPlaying={animation}
+          playsInline
         />
         {/* */}
         <a
