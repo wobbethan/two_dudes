@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .ic-content {
     z-index: 999;
     height: 100vh;
@@ -109,7 +109,7 @@
     display: none;
   }
 }
-@media (orientation: landscape) and (max-height: 420px) {
+@media (orientation: landscape) and (max-height: 430px) {
   .ic-follow {
     position: relative;
     top: 0%;

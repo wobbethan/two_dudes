@@ -99,7 +99,7 @@ ul > li {
   list-style: none;
   text-decoration: none;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .it-container {
     width: 60vmin;
     height: 110vmin;
