@@ -4,7 +4,6 @@ import tiktokWindow from "../assets/tiktokWindow.png";
 import appleWindow from "../assets/apWindow.png";
 import youtubeWindow from "../assets/youtubeWindow.png";
 import spotifyWindow from "../assets/spotifyWindow.png";
-import homebkg from "../assets/luca-bravo-VowIFDxogG4-unsplash.jpg";
 import "./Home.css";
 import { Helmet } from "react-helmet-async";
 function Home() {
