@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { React } from "react";
 import "./Youtube.css";
 import youtubeBkg from "../assets/youtubebkg.mp4";
 import { Helmet } from "react-helmet-async";
