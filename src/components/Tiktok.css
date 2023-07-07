@@ -67,6 +67,7 @@
     transition: 3s ease;
     height: auto;
     width: 101vw;
+    overflow: visible;
   }
 }
 @media (orientation: landscape) {

@@ -16,6 +16,16 @@
   object-fit: cover;
   overflow: visible;
 }
+.instagram-component > img:nth-child(2) {
+  z-index: 000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
+  overflow: visible;
+}
 .ic-content {
   z-index: 999;
   height: 100vh;

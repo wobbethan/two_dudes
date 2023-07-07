@@ -41,3 +41,16 @@
 .yc-content:hover > img {
   scale: 0.65;
 }
+@media screen and (max-width: 541px) {
+  .yt-bkg-vid {
+    z-index: 000;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 5s ease;
+    filter: blur(0px);
+  }
+}

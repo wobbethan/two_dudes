@@ -4,7 +4,7 @@ import youtubeBkg from "../assets/youtubebkg.mp4";
 import { Helmet } from "react-helmet-async";
 
 function Youtube() {
-  useEffect(() => {
+  function playing() {
     const logos = document.querySelectorAll(".yt-logo, .yt-bkg-vid");
     setTimeout(() => {
       logos.forEach((logo) => {
@@ -12,7 +12,7 @@ function Youtube() {
         logo.classList.add("active");
       });
     }, 5000);
-  }, []);
+  }
 
   return (
     <>
@@ -34,6 +34,7 @@ function Youtube() {
           alt="background video for youtube"
           className="yt-bkg-vid"
           playsInline
+          onPlay={playing}
         />
         {/* */}
         <a
