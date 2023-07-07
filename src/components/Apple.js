@@ -35,7 +35,10 @@ function Apple() {
 
       <div className="apple-component">
         <img src={apple} alt="apple os background" />
-        <a href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001">
+        <a
+          href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
+          className="mobile-phone-link"
+        >
           <img src={staticPhone} alt="static IPhone" className="static-phone" />
         </a>
         <a
