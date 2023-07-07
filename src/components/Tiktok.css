@@ -60,12 +60,12 @@
     width: 100vw;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 541px) {
   .tc-content > a > img {
     position: relative;
-    transform: translate(-50%, 5%);
+    transform: translate(-50%, 0%);
     transition: 3s ease;
-    height: auto;
+    height: 65vh;
     width: 101vw;
     overflow: visible;
   }
