@@ -39,11 +39,8 @@
   height: 100%;
   justify-content: space-evenly;
   margin: 0;
-  flex-shrink: 0;
 }
-.model_container > .phone_model:nth-child(1) {
-  scale: 1.5;
-}
+
 .phone_model {
   width: 100%;
   height: 100%;
