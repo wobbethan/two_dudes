@@ -19,7 +19,7 @@ function Instagram() {
       </Helmet>
       <div className="instagram-component">
         <img src={blobs} alt="instagram-blob-background" />
-        <img src={phone} alt="Instagram Graffiti" />
+        <img src={phone} alt="Instagram Graffiti" decoding="sync" />
 
         <div className="ic-content">
           <img className="ic-follow" src={follow} alt="Instagram Graffiti" />

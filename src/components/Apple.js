@@ -47,8 +47,9 @@ function Apple() {
         >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Podcasts_%28iOS%29.svg/1200px-Podcasts_%28iOS%29.svg.png"
-            alt="static IPhone"
+            alt="static apple logo"
             className="static-logo"
+            decoding="sync"
           />
         </a>
         <a
