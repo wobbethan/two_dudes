@@ -4,6 +4,7 @@ import apple from "../assets/applebkg.jpg";
 import staticPhone from "../assets/staticphone.png";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import { motion } from "framer-motion";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 function Apple() {
@@ -34,24 +35,14 @@ function Apple() {
       </Helmet>
 
       <div className="apple-component">
-        <img src={apple} alt="apple os background" />
+        <img src={apple} alt="apple os background" className="ac-bkg" />
         <a
           href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
           className="mobile-phone-link"
         >
           <img src={staticPhone} alt="static IPhone" className="static-phone" />
         </a>
-        <a
-          href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
-          className="ap-logo-container"
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Podcasts_%28iOS%29.svg/1200px-Podcasts_%28iOS%29.svg.png"
-            alt="static apple logo"
-            className="static-logo"
-            decoding="sync"
-          />
-        </a>
+
         <a
           href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
           target="_blank"
@@ -65,10 +56,15 @@ function Apple() {
             className="phone_model"
             scene="https://prod.spline.design/nVBRymFrPz8-8KZp/scene.splinecode"
           />
-          <Spline
-            className="ap-watch"
-            scene="https://prod.spline.design/vKVNonf2fsf-Fiu9/scene.splinecode"
-          />
+          <motion.a
+            href="https://www.apple.com/apple-podcasts/"
+            className="apple_logo_laptop"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Podcasts_%28iOS%29.svg/1024px-Podcasts_%28iOS%29.svg.png"
+              alt="Podcast logo"
+            />
+          </motion.a>
 
           <Spline
             scene="https://prod.spline.design/mvdokveiGFuSae2N/scene.splinecode"
