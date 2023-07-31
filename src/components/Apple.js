@@ -21,8 +21,9 @@ function Apple() {
         logo.classList.remove("sl-active");
         logo.classList.add("sl-active");
       });
-    }, 2000);
+    }, 1000);
   });
+
   return (
     <>
       <Helmet>
@@ -36,28 +37,14 @@ function Apple() {
 
       <div className="apple-component">
         <img src={apple} alt="apple os background" className="ac-bkg" />
-        <a
-          href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
-          className="mobile-phone-link"
-        >
-          <img src={staticPhone} alt="static IPhone" className="static-phone" />
-        </a>
 
-        <a
-          href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
-          target="_blank"
-          className="ac-title"
-          rel="noreferrer"
-        >
-          <h1>Available on Apple Podcasts</h1>
-        </a>
         <article className="model_container">
           <Spline
             className="phone_model"
             scene="https://prod.spline.design/nVBRymFrPz8-8KZp/scene.splinecode"
           />
           <motion.a
-            href="https://www.apple.com/apple-podcasts/"
+            href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001"
             className="apple_logo_laptop"
           >
             <img
@@ -65,7 +52,13 @@ function Apple() {
               alt="Podcast logo"
             />
           </motion.a>
-
+          <a href="https://podcasts.apple.com/us/podcast/2-dudes-and-an-umbrella/id1686538001">
+            <img
+              src={staticPhone}
+              alt="static IPhone"
+              className="static-phone"
+            />
+          </a>
           <Spline
             scene="https://prod.spline.design/mvdokveiGFuSae2N/scene.splinecode"
             className="phone_model"

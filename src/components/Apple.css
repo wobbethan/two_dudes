@@ -23,7 +23,6 @@
   filter: blur(0px);
 }
 .mobile-phone-link {
-  display: none;
   width: 100%;
   height: 100%;
   z-index: 999;
@@ -51,6 +50,7 @@
   height: auto;
   padding: 2%;
   overflow: visible;
+  cursor: pointer;
 }
 
 .ac-title {
@@ -75,7 +75,7 @@
   position: relative;
   width: 100%;
   scale: 0.75;
-  top: 17.5%;
+  top: 10vh;
 }
 
 @media screen and (max-width: 541px) {
@@ -102,7 +102,6 @@
   }
   .static-phone {
     display: block;
-    z-index: 888;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -110,8 +109,9 @@
     left: 0%;
     object-fit: cover;
     filter: blur(0px);
-    transition: 2s ease-in;
+    transition: 1s ease-in;
     scale: 0.0001;
+    cursor: pointer;
   }
   .static-logo {
     display: block;
@@ -128,10 +128,6 @@
     transform: translateY(150%);
     scale: 0.2;
   }
-
-  .ac-title {
-    display: none;
-  }
 }
 @media screen and (orientation: landscape) and (max-height: 541px) {
   .ap-logo-container {
@@ -142,12 +138,7 @@
   }
 
   .static-phone {
-    z-index: 888;
-    display: block;
-  }
-
-  .static-phone {
-    display: block;
+    display: none;
     z-index: 888;
     position: absolute;
     width: 100%;
@@ -158,6 +149,7 @@
     filter: blur(0px);
     transition: 2s ease-in;
     scale: 0.0001;
+    cursor: pointer;
   }
   .sp-active {
     scale: 1;

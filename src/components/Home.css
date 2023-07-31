@@ -36,7 +36,11 @@
   transform: translate(-50%, 200%);
   box-sizing: content-box;
   z-index: 888;
-  transition: 3s ease;
+  transition: 2s ease;
+  cursor: grab;
+}
+.image-track:active {
+  cursor: grabbing;
 }
 .it-active {
   transform: translate(-50%, -50%);
