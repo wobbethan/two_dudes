@@ -17,7 +17,7 @@ function Youtube() {
   return (
     <>
       <Helmet>
-        <title>2 Dudes and an Umbrella Podcast | Youtube</title>
+        <title>Umbrella Boys | Youtube</title>
         <meta
           name="description"
           content="Listen and watch our full length podcasts on youtube.com"

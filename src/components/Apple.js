@@ -27,7 +27,7 @@ function Apple() {
   return (
     <>
       <Helmet>
-        <title>2 Dudes and an Umbrella Podcast | Apple Podcasts</title>
+        <title>Umbrella Boys | Apple Podcasts</title>
         <meta
           name="description"
           content="Our podcast is also available to listen to on Apple Podcasts"

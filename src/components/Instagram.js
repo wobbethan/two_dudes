@@ -10,7 +10,7 @@ function Instagram() {
   return (
     <>
       <Helmet>
-        <title>2 Dudes and an Umbrella Podcast | Instagram</title>
+        <title>Umbrella Boys | Instagram</title>
         <meta
           name="description"
           content="Connect with our podcast and the dudes themselves on Instagram"

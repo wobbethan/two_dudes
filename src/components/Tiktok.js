@@ -7,7 +7,7 @@ function Tiktok() {
   return (
     <>
       <Helmet>
-        <title>2 Dudes and an Umbrella Podcast | Tiktok</title>
+        <title>Umbrella Boys | Tiktok</title>
         <meta
           name="description"
           content="Find short-form podcast highlights on our tiktok page."

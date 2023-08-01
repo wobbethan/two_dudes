@@ -16,7 +16,7 @@ function Spotify() {
   return (
     <>
       <Helmet>
-        <title>2 Dudes and an Umbrella Podcast | Spotify</title>
+        <title>Umbrella Boys | Spotify</title>
         <meta
           name="description"
           content="Take our podcast on the go by listening on Spotify!"

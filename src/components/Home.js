@@ -73,7 +73,7 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>2 Dudes and an Umbrella Podcast | Home</title>
+        <title>Umbrella Boys | Home</title>
         <meta
           name="description"
           content="Welcome to our Social Hub! Discover the pulse of our brand across various social media platforms all in one place."
