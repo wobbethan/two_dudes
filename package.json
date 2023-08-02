@@ -1,6 +1,7 @@
 {
   "name": "two_dudes",
   "version": "0.1.0",
+  "homepage": "https://umbrellaboyz.com/",
   "private": true,
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
